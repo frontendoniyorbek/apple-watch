@@ -73,7 +73,7 @@ img{
 
 /* BUTTON */
 .lined-link {
-    display: inline-block;
+    display: inline-flex;
     align-items: center;
     color: var(--primary);
     font-weight: 700;
