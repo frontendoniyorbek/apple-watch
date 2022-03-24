@@ -50,6 +50,7 @@ img{
 .button {
     display: inline-block;
     padding: 12px 38px;
+    min-width: 260px;
     border: 0;
     text-decoration: none;
     text-transform: uppercase;
@@ -57,6 +58,7 @@ img{
     line-height: 1.5;
     font-weight: bold;
     color: #fff;
+    text-align: center;
     background-color: var(--primary);
     transition: background-color 0.3s ease;
 }
@@ -82,12 +84,17 @@ img{
 
 }
 
-.lined-link::before {
+.lined-link::before  {
     width: 40px;
     height: 3px;
     margin-right: 10px;
     background-color: var(--primary);
     content: "";
+    transition: width 0.3s ease;
+}
+
+.lined-link:hover::before{
+    width: 60px;
 }
 /* MAIN-CONTENT */
 .main-content{
@@ -249,6 +256,24 @@ img{
     box-shadow: 16px 0 0 0 #ddd, 32px 0 0 0 #ddd;
 }
 
+
+/* PROMO */
+.promo {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.promo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.promo-img {
+    width: 400px;
+    height: 600px;
+    object-fit:cover;
+}
 
 /* RETINA BG */
 @media
